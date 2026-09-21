@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Windows 10 1809 (build 17763) is the minimum; Windows 11 works too. -->
+    <TargetFramework>net10.0-windows10.0.17763.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <!-- WinForms is only used for the built-in NotifyIcon (system tray). No third-party packages. -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>MazureTools</AssemblyName>
+    <RootNamespace>MazureTools</RootNamespace>
+    <Version>0.2.0</Version>
+    <Authors>Claxe</Authors>
+    <Company>Claxe</Company>
+    <Copyright>Copyright (c) 2026 Claxe</Copyright>
+    <Product>Mazure Tools</Product>
+    <Description>Windows system and network utility toolbox</Description>
+    <ApplicationIcon>Resources\mazure.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <TieredPGO>true</TieredPGO>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <!-- Per-monitor DPI is declared in app.manifest (WPF honours it); the WinForms analyzer would prefer an API call. -->
+    <NoWarn>$(NoWarn);WFO0003</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Keep WPF types (Application, MessageBox, ...) unambiguous. -->
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+    <!-- The WPF SDK drops these two from the implicit set; we do not import System.Windows.Shapes, so there is no ambiguity. -->
+    <Using Include="System.IO" />
+    <Using Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\mazure.ico" />
+    <Resource Include="Resources\mazure-logo.png" />
+    <Compile Remove="dist\**" />
+    <Compile Remove="tools\**" />
+  </ItemGroup>
+
+</Project>

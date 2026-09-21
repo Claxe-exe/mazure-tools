@@ -1,0 +1,46 @@
+name: release
+
+# Push a tag such as v0.2.0 and this builds portable zips (x64 + ARM64) and attaches them to a GitHub release.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Check TR/EN dictionaries
+        shell: pwsh
+        run: ./tools/Test-Localization.ps1
+
+      - name: Publish win-x64
+        shell: pwsh
+        run: ./publish.ps1 -Runtime win-x64
+
+      - name: Publish win-arm64
+        shell: pwsh
+        run: ./publish.ps1 -Runtime win-arm64
+
+      - name: Checksums
+        shell: pwsh
+        run: |
+          Get-ChildItem dist -Filter *.zip | ForEach-Object {
+            "$((Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower())  $($_.Name)"
+          } | Set-Content dist/SHA256SUMS.txt
+
+      - name: Create GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $files = Get-ChildItem dist -Filter *.zip | ForEach-Object FullName
+          gh release create "${{ github.ref_name }}" @files dist/SHA256SUMS.txt --title "Mazure Tools ${{ github.ref_name }}" --generate-notes

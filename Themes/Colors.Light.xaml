@@ -1,0 +1,23 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:Boolean x:Key="IsDarkTheme">False</sys:Boolean>
+
+    <SolidColorBrush x:Key="WindowBrush" Color="#F3F5F8" />
+    <SolidColorBrush x:Key="SidebarBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="InputBrush" Color="#EEF1F5" />
+    <SolidColorBrush x:Key="TrackBrush" Color="#E2E7EE" />
+    <SolidColorBrush x:Key="BorderSoftBrush" Color="#D9DEE6" />
+    <SolidColorBrush x:Key="TextBrush" Color="#141922" />
+    <SolidColorBrush x:Key="MutedBrush" Color="#5F6877" />
+    <SolidColorBrush x:Key="AccentBrush" Color="#0891B2" />
+    <SolidColorBrush x:Key="AccentTextBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="SelectedBrush" Color="#DDF1F6" />
+    <SolidColorBrush x:Key="SuccessBrush" Color="#059669" />
+    <SolidColorBrush x:Key="WarningBrush" Color="#D97706" />
+    <SolidColorBrush x:Key="DangerBrush" Color="#DC2626" />
+    <SolidColorBrush x:Key="DangerTextBrush" Color="#FFFFFF" />
+
+</ResourceDictionary>
