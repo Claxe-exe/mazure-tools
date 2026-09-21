@@ -1,0 +1,14 @@
+# Normalise line endings; keep Windows scripts as CRLF so they run everywhere.
+* text=auto
+*.cs text eol=lf diff=csharp
+*.xaml text eol=lf
+*.csproj text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets
+*.png binary
+*.ico binary
+*.gif binary

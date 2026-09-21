@@ -1,0 +1,356 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- English (default). Keep the keys identical in Strings.Turkish.xaml. "\n" = line break. -->
+
+    <!-- ============================================================ navigation / common -->
+    <sys:String x:Key="Nav_Dashboard">Dashboard</sys:String>
+    <sys:String x:Key="Nav_System">System</sys:String>
+    <sys:String x:Key="Nav_Network">Network</sys:String>
+    <sys:String x:Key="Nav_Processes">Processes</sys:String>
+    <sys:String x:Key="Nav_Storage">Storage</sys:String>
+    <sys:String x:Key="Nav_Utilities">Utilities</sys:String>
+    <sys:String x:Key="Nav_Settings">Settings</sys:String>
+
+    <sys:String x:Key="Common_Cancel">Cancel</sys:String>
+    <sys:String x:Key="Common_OK">OK</sys:String>
+    <sys:String x:Key="Common_Refresh">Refresh</sys:String>
+    <sys:String x:Key="Common_Browse">Browse…</sys:String>
+    <sys:String x:Key="Common_Stop">Stop</sys:String>
+    <sys:String x:Key="Common_Enabled">Enabled</sys:String>
+    <sys:String x:Key="Common_Disabled">Disabled</sys:String>
+    <sys:String x:Key="Common_ErrorTitle">Something went wrong</sys:String>
+
+    <sys:String x:Key="Priv_Admin">Administrator</sys:String>
+    <sys:String x:Key="Priv_Standard">Standard user</sys:String>
+
+    <sys:String x:Key="Time_DaysFormat">{0}d {1}h {2}m {3}s</sys:String>
+    <sys:String x:Key="Time_HoursFormat">{0}h {1}m {2}s</sys:String>
+
+    <sys:String x:Key="Err_Access">Access was denied. Try again as administrator, or check that the file/folder permissions allow it.</sys:String>
+    <sys:String x:Key="Err_Network">A network error occurred: {0}</sys:String>
+    <sys:String x:Key="Err_DirNotFound">The folder could not be found. It may have been moved or deleted.</sys:String>
+    <sys:String x:Key="Err_FileNotFound">The file could not be found. It may have been moved or deleted.</sys:String>
+    <sys:String x:Key="Err_IO">A file system error occurred: {0}</sys:String>
+    <sys:String x:Key="Cmd_StartFailed">Could not start '{0}': {1}</sys:String>
+    <sys:String x:Key="Cmd_Timeout">'{0}' did not finish within {1} seconds.</sys:String>
+
+    <sys:String x:Key="App_AlreadyRunning">Mazure Tools is already running (possibly as administrator). Look for its icon in the system tray.</sys:String>
+    <sys:String x:Key="App_UnexpectedError">An unexpected error occurred:\n\n{0}\n\nDetails were written to %AppData%\MazureTools\error.log.</sys:String>
+
+    <sys:String x:Key="Tray_Open">Open Mazure Tools</sys:String>
+    <sys:String x:Key="Tray_Exit">Exit</sys:String>
+    <sys:String x:Key="Tray_HintTitle">Mazure Tools is still running</sys:String>
+    <sys:String x:Key="Tray_HintText">It was minimised to the system tray. Click the tray icon to reopen it, or right-click and choose Exit to quit.</sys:String>
+
+    <!-- ============================================================ metrics / dashboard / system -->
+    <sys:String x:Key="Metric_Cpu">CPU</sys:String>
+    <sys:String x:Key="Metric_Memory">MEMORY</sys:String>
+    <sys:String x:Key="Metric_Gpu">GPU</sys:String>
+    <sys:String x:Key="Gpu_NoCounters">Windows exposes no GPU performance counters on this system.</sys:String>
+
+    <sys:String x:Key="Dash_Storage">Storage</sys:String>
+    <sys:String x:Key="Dash_Network">Network</sys:String>
+    <sys:String x:Key="Dash_System">System</sys:String>
+    <sys:String x:Key="Info_Windows">Windows</sys:String>
+    <sys:String x:Key="Info_Cpu">CPU</sys:String>
+    <sys:String x:Key="Info_Gpu">GPU</sys:String>
+    <sys:String x:Key="Info_Uptime">Uptime</sys:String>
+    <sys:String x:Key="Net_Connected">Connected</sys:String>
+    <sys:String x:Key="Net_Disconnected">Disconnected</sys:String>
+    <sys:String x:Key="Net_Checking">Checking…</sys:String>
+    <sys:String x:Key="Dash_NoConnection">No active network connection</sys:String>
+    <sys:String x:Key="Dash_NoGateway">No adapter with a default gateway</sys:String>
+
+    <sys:String x:Key="Sys_Title">System Information</sys:String>
+    <sys:String x:Key="Sys_Subtitle">Live hardware load and details about this computer.</sys:String>
+    <sys:String x:Key="Sys_Computer">Computer</sys:String>
+    <sys:String x:Key="Sys_Memory">Memory</sys:String>
+    <sys:String x:Key="Sys_Disks">Disks</sys:String>
+    <sys:String x:Key="Sys_ComputerName">Computer name</sys:String>
+    <sys:String x:Key="Sys_Version">Version</sys:String>
+    <sys:String x:Key="Sys_Architecture">Architecture</sys:String>
+    <sys:String x:Key="Sys_LogicalProcessors">Logical processors</sys:String>
+    <sys:String x:Key="Sys_Total">Total</sys:String>
+    <sys:String x:Key="Sys_Used">Used</sys:String>
+    <sys:String x:Key="Sys_Free">Free</sys:String>
+    <sys:String x:Key="Sys_UnknownCpu">Unknown CPU</sys:String>
+    <sys:String x:Key="Sys_UnknownGpu">Unknown GPU</sys:String>
+
+    <sys:String x:Key="Disk_Free">free</sys:String>
+    <sys:String x:Key="Disk_UsedOf">used of</sys:String>
+
+    <!-- ============================================================ network -->
+    <sys:String x:Key="Net_Title">Network Tools</sys:String>
+    <sys:String x:Key="Net_Subtitle">Connection details, ping and network maintenance.</sys:String>
+    <sys:String x:Key="Net_Connection">Connection</sys:String>
+    <sys:String x:Key="Net_Status">Status</sys:String>
+    <sys:String x:Key="Net_ActiveAdapter">Active adapter</sys:String>
+    <sys:String x:Key="Net_LocalIp">Local IP</sys:String>
+    <sys:String x:Key="Net_Gateway">Gateway</sys:String>
+    <sys:String x:Key="Net_Dns">DNS servers</sys:String>
+    <sys:String x:Key="Net_PublicIp">Public IP</sys:String>
+    <sys:String x:Key="Net_LookUp">Look up</sys:String>
+    <sys:String x:Key="Net_PublicIpNote">The public IP is only looked up when you click the button. It asks api.ipify.org (with icanhazip.com as fallback), which sees your address.</sys:String>
+    <sys:String x:Key="PublicIp_NotLookedUp">Not looked up</sys:String>
+    <sys:String x:Key="PublicIp_Looking">Looking up…</sys:String>
+    <sys:String x:Key="PublicIp_Failed">Lookup failed</sys:String>
+    <sys:String x:Key="Net_PublicIpFail">Could not determine the public IP address. Check your internet connection and try again.</sys:String>
+
+    <sys:String x:Key="Net_Maintenance">Maintenance</sys:String>
+    <sys:String x:Key="Net_FlushDns">Flush DNS cache</sys:String>
+    <sys:String x:Key="Net_FlushDnsDesc">Clears cached name lookups (ipconfig /flushdns).</sys:String>
+    <sys:String x:Key="Net_RenewIp">Renew IP address</sys:String>
+    <sys:String x:Key="Net_RenewIpDesc">Requests a new DHCP lease (ipconfig /renew). The connection may briefly drop.</sys:String>
+    <sys:String x:Key="Net_MaintNote">You are always asked before anything changes. Renewing the IP needs administrator rights; flushing the DNS cache only asks for them if Windows requires it.</sys:String>
+    <sys:String x:Key="Net_FlushBody">This runs 'ipconfig /flushdns' and clears Windows' cached DNS lookups.\n\nIt is harmless: names are simply looked up again the next time they are needed.</sys:String>
+    <sys:String x:Key="Net_RenewBody">This runs 'ipconfig /renew' and asks your router (DHCP) for fresh addresses on every DHCP adapter.\n\nYour connection may drop for a few seconds and your local IP address may change. Adapters with a static address are not affected.</sys:String>
+    <sys:String x:Key="Net_RenewReason">Renewing IP addresses (ipconfig /renew) needs administrator rights.</sys:String>
+    <sys:String x:Key="Net_RenewNeedsAdmin">Renewing IP addresses needs administrator rights.</sys:String>
+    <sys:String x:Key="Net_FlushOk">The DNS resolver cache was flushed.</sys:String>
+    <sys:String x:Key="Net_FlushNeedsAdmin">Windows refused to flush the DNS cache without administrator rights.\n\n{0}</sys:String>
+    <sys:String x:Key="Net_FlushFail">Windows could not flush the DNS cache.\n\n{0}</sys:String>
+    <sys:String x:Key="Net_RenewOk">IP addresses were renewed.\n\n{0}</sys:String>
+    <sys:String x:Key="Net_RenewFail">Windows could not renew all IP addresses. Adapters using a static address are skipped by design.\n\n{0}</sys:String>
+
+    <sys:String x:Key="Ping_Title">Ping</sys:String>
+    <sys:String x:Key="Ping_Host">Host or IP address</sys:String>
+    <sys:String x:Key="Ping_Count">Count</sys:String>
+    <sys:String x:Key="Ping_Start">Start ping</sys:String>
+    <sys:String x:Key="Ping_Sent">Sent</sys:String>
+    <sys:String x:Key="Ping_Received">Received</sys:String>
+    <sys:String x:Key="Ping_Loss">Packet loss</sys:String>
+    <sys:String x:Key="Ping_Min">Minimum</sys:String>
+    <sys:String x:Key="Ping_Avg">Average</sys:String>
+    <sys:String x:Key="Ping_Max">Maximum</sys:String>
+    <sys:String x:Key="Ping_CountInvalid">Enter how many pings to send (1 to {0}).</sys:String>
+    <sys:String x:Key="Ping_HostInvalid">Enter a valid host name or IP address, for example 1.1.1.1 or example.com.</sys:String>
+    <sys:String x:Key="Ping_Reply">Reply from {0}: time={1} TTL={2}</sys:String>
+    <sys:String x:Key="Ping_TimedOut">Request timed out.</sys:String>
+    <sys:String x:Key="Ping_Failed">Ping failed: {0}</sys:String>
+    <sys:String x:Key="Ping_HostUnreachable">Destination host unreachable.</sys:String>
+    <sys:String x:Key="Ping_NetUnreachable">Destination network unreachable.</sys:String>
+    <sys:String x:Key="Ping_TtlExpired">TTL expired in transit.</sys:String>
+    <sys:String x:Key="Ping_BadDestination">Bad destination.</sys:String>
+
+    <sys:String x:Key="Net_Adapters">Network adapters</sys:String>
+    <sys:String x:Key="Ad_Type">Type</sys:String>
+    <sys:String x:Key="Ad_Mac">MAC address</sys:String>
+    <sys:String x:Key="Ad_Speed">Speed</sys:String>
+    <sys:String x:Key="Ad_Dhcp">DHCP</sys:String>
+    <sys:String x:Key="Ad_IPv4">IPv4</sys:String>
+    <sys:String x:Key="Ad_IPv6">IPv6</sys:String>
+
+    <sys:String x:Key="Elev_Title">Administrator rights required</sys:String>
+    <sys:String x:Key="Elev_Body">{0}\n\nMazure Tools can restart itself as administrator. Windows will show a permission (UAC) prompt, and this window will close.</sys:String>
+    <sys:String x:Key="Elev_Button">Restart as administrator</sys:String>
+    <sys:String x:Key="Elev_AlreadyTitle">Administrator rights</sys:String>
+    <sys:String x:Key="Elev_Already">{0}\n\nMazure Tools is already running as administrator, so Windows refused this action for another reason.</sys:String>
+    <sys:String x:Key="Elev_CancelledTitle">Restart cancelled</sys:String>
+    <sys:String x:Key="Elev_Cancelled">The Windows permission prompt was declined, so nothing was changed.</sys:String>
+    <sys:String x:Key="Elev_FailedTitle">Could not restart</sys:String>
+    <sys:String x:Key="Elev_Failed">Windows refused to start an elevated instance: {0}</sys:String>
+
+    <!-- ============================================================ processes -->
+    <sys:String x:Key="Proc_Title">Process Manager</sys:String>
+    <sys:String x:Key="Proc_Subtitle">Refreshes every 2 seconds while this page is open. Essential Windows processes are protected.</sys:String>
+    <sys:String x:Key="Proc_Restart">Restart</sys:String>
+    <sys:String x:Key="Proc_End">End process</sys:String>
+    <sys:String x:Key="Proc_Filter">Filter by name or PID…</sys:String>
+    <sys:String x:Key="Col_Name">Name</sys:String>
+    <sys:String x:Key="Col_Pid">PID</sys:String>
+    <sys:String x:Key="Col_Cpu">CPU</sys:String>
+    <sys:String x:Key="Col_Memory">Memory</sys:String>
+    <sys:String x:Key="Proc_Loading">Loading processes…</sys:String>
+    <sys:String x:Key="Proc_Count">{0} processes</sys:String>
+    <sys:String x:Key="Proc_ReadFail">Could not read the process list.</sys:String>
+    <sys:String x:Key="Risk_Protected">Protected</sys:String>
+    <sys:String x:Key="Risk_System">System</sys:String>
+
+    <sys:String x:Key="Proc_ProtectedTitle">Protected process</sys:String>
+    <sys:String x:Key="Proc_ProtectedBody">'{0}' (PID {1}) will not be ended.\n\n{2}</sys:String>
+    <sys:String x:Key="Proc_EndBody">End '{0}' (PID {1})?\n\nThe process is stopped immediately. Any unsaved work in it will be lost.</sys:String>
+    <sys:String x:Key="Proc_EndSystemWarn">\n\nWARNING — Windows component: {0}\nEnding it can make Windows unstable.</sys:String>
+    <sys:String x:Key="Proc_RestartCannotTitle">Cannot restart</sys:String>
+    <sys:String x:Key="Proc_RestartCannotBody">'{0}' is a Windows component and cannot be restarted from here.\n\n{1}</sys:String>
+    <sys:String x:Key="Proc_RestartTitle">Restart process</sys:String>
+    <sys:String x:Key="Proc_RestartBody">Restart '{0}' (PID {1})?\n\nThe process is ended immediately (unsaved work is lost) and started again from its executable. Command-line arguments are not preserved, so it starts as if launched normally.</sys:String>
+
+    <sys:String x:Key="Proc_StillRunning">'{0}' was asked to end but is still running. It may be waiting on the system.</sys:String>
+    <sys:String x:Key="Proc_Ended">'{0}' (PID {1}) was ended.</sys:String>
+    <sys:String x:Key="Proc_AlreadyExited">'{0}' had already exited.</sys:String>
+    <sys:String x:Key="Proc_EndFailed">Could not end '{0}': {1}</sys:String>
+    <sys:String x:Key="Proc_NotRestartable">'{0}' is a Windows component and cannot be restarted from here. Windows normally restarts it automatically.</sys:String>
+    <sys:String x:Key="Proc_NoPath">Windows did not reveal where '{0}' is located, so it cannot be restarted.</sys:String>
+    <sys:String x:Key="Proc_DidNotExit">'{0}' did not exit in time, so it was not started again.</sys:String>
+    <sys:String x:Key="Proc_Restarted">'{0}' was restarted.</sys:String>
+    <sys:String x:Key="Proc_NotRunning">'{0}' is no longer running.</sys:String>
+    <sys:String x:Key="Proc_RestartFailed">Could not restart '{0}': {1}</sys:String>
+    <sys:String x:Key="Proc_Blocked">'{0}' is protected. {1}</sys:String>
+    <sys:String x:Key="Proc_AccessDeniedAdmin">Windows denied access to '{0}'. It is protected by the system and cannot be controlled, even as administrator.</sys:String>
+    <sys:String x:Key="Proc_AccessDenied">Windows denied access to '{0}'. It probably runs with higher privileges than Mazure Tools.</sys:String>
+
+    <sys:String x:Key="Guard_self">This is Mazure Tools itself. Use the tray menu (Exit) to close it.</sys:String>
+    <sys:String x:Key="Guard_kernel">This is a core Windows kernel process.</sys:String>
+    <sys:String x:Key="Guard_system">This is the Windows kernel.</sys:String>
+    <sys:String x:Key="Guard_systemidleprocess">This is not a real process; it only represents idle CPU time.</sys:String>
+    <sys:String x:Key="Guard_idle">This is not a real process; it only represents idle CPU time.</sys:String>
+    <sys:String x:Key="Guard_registry">This process holds the Windows registry in memory.</sys:String>
+    <sys:String x:Key="Guard_memorycompression">Windows uses this process to compress memory.</sys:String>
+    <sys:String x:Key="Guard_smss">The Session Manager starts and supervises every Windows session.</sys:String>
+    <sys:String x:Key="Guard_csrss">Ending the Client/Server Runtime immediately crashes Windows (blue screen).</sys:String>
+    <sys:String x:Key="Guard_wininit">Ending Windows Start-Up Application immediately crashes Windows (blue screen).</sys:String>
+    <sys:String x:Key="Guard_winlogon">Ending the Windows Logon process logs you off and can crash Windows.</sys:String>
+    <sys:String x:Key="Guard_services">The Service Control Manager runs all Windows services; ending it crashes Windows.</sys:String>
+    <sys:String x:Key="Guard_lsass">The Local Security Authority handles logins; ending it forces Windows to restart.</sys:String>
+    <sys:String x:Key="Guard_lsaiso">This process protects credentials (Credential Guard).</sys:String>
+    <sys:String x:Key="Guard_securesystem">This is part of Windows virtualisation-based security.</sys:String>
+    <sys:String x:Key="Guard_svchost">A Service Host runs one or more Windows services; ending it can disable networking, sound, updates or security.</sys:String>
+    <sys:String x:Key="Guard_explorer">This is the Windows desktop, taskbar and File Explorer. It usually restarts, but open Explorer windows are lost.</sys:String>
+    <sys:String x:Key="Guard_dwm">The Desktop Window Manager draws every window; ending it blanks or restarts the screen.</sys:String>
+    <sys:String x:Key="Guard_sihost">The Shell Infrastructure Host runs parts of the desktop shell.</sys:String>
+    <sys:String x:Key="Guard_ctfmon">This handles text input and keyboard layouts.</sys:String>
+    <sys:String x:Key="Guard_fontdrvhost">This hosts font drivers used by the desktop.</sys:String>
+    <sys:String x:Key="Guard_audiodg">The Windows Audio Device Graph; ending it silences all sound until it restarts.</sys:String>
+    <sys:String x:Key="Guard_spoolsv">The Print Spooler; ending it stops all printing.</sys:String>
+    <sys:String x:Key="Guard_taskhostw">This hosts Windows background tasks.</sys:String>
+    <sys:String x:Key="Guard_runtimebroker">This brokers permissions for Windows apps.</sys:String>
+    <sys:String x:Key="Guard_searchhost">This is the Windows search/start experience.</sys:String>
+    <sys:String x:Key="Guard_startmenuexperiencehost">This is the Start menu.</sys:String>
+    <sys:String x:Key="Guard_shellexperiencehost">This draws parts of the Windows shell.</sys:String>
+    <sys:String x:Key="Guard_textinputhost">This is the touch keyboard and emoji panel.</sys:String>
+    <sys:String x:Key="Guard_applicationframehost">This hosts UWP app windows.</sys:String>
+    <sys:String x:Key="Guard_conhost">The Console Window Host draws console windows; ending it closes the terminal using it.</sys:String>
+    <sys:String x:Key="Guard_wudfhost">This hosts user-mode device drivers.</sys:String>
+    <sys:String x:Key="Guard_dashost">This hosts device association services.</sys:String>
+    <sys:String x:Key="Guard_wmiprvse">The WMI Provider Host serves system management queries.</sys:String>
+    <sys:String x:Key="Guard_msmpeng">This is the Microsoft Defender antivirus engine.</sys:String>
+    <sys:String x:Key="Guard_nissrv">This is the Microsoft Defender network protection service.</sys:String>
+    <sys:String x:Key="Guard_securityhealthservice">This is the Windows Security service.</sys:String>
+    <sys:String x:Key="Guard_securityhealthsystray">This is the Windows Security tray icon.</sys:String>
+    <sys:String x:Key="Guard_smartscreen">This is Windows SmartScreen protection.</sys:String>
+    <sys:String x:Key="Guard_searchindexer">The Windows Search indexer; ending it pauses file search.</sys:String>
+    <sys:String x:Key="Guard_lsm">The Local Session Manager tracks logon sessions.</sys:String>
+    <sys:String x:Key="Guard_wlanext">This handles Wi-Fi connectivity.</sys:String>
+
+    <!-- ============================================================ storage -->
+    <sys:String x:Key="Stor_Title">Storage Tools</sys:String>
+    <sys:String x:Key="Stor_Subtitle">Disk usage and a folder size calculator.</sys:String>
+    <sys:String x:Key="Stor_Disks">Disks</sys:String>
+    <sys:String x:Key="Stor_FolderSize">Folder size</sys:String>
+    <sys:String x:Key="Stor_Calculate">Calculate</sys:String>
+    <sys:String x:Key="Stor_Prompt">Choose a folder and press Calculate.</sys:String>
+    <sys:String x:Key="Stor_Note">Symbolic links and junctions are not followed. Sizes are file sizes, not space allocated on disk.</sys:String>
+    <sys:String x:Key="Stor_Counting">Counting…</sys:String>
+    <sys:String x:Key="Stor_CountingProgress">Counting… {0:N0} files, {1}</sys:String>
+    <sys:String x:Key="Stor_Result">{0}  ({1:N0} bytes) in {2:N0} files.\nFiles and folders that Windows denies access to are not included.</sys:String>
+    <sys:String x:Key="Stor_Cancelled">Cancelled.</sys:String>
+    <sys:String x:Key="Stor_NotFound">That folder does not exist.</sys:String>
+    <sys:String x:Key="Stor_NotFoundDialog">The folder '{0}' could not be found.</sys:String>
+    <sys:String x:Key="Stor_ChooseFirst">Choose or type a folder path first.</sys:String>
+    <sys:String x:Key="Stor_PickTitle">Choose a folder to measure</sys:String>
+
+    <!-- ============================================================ utilities -->
+    <sys:String x:Key="Util_Subtitle">Hashing, port check and quick launchers.</sys:String>
+    <sys:String x:Key="Util_QuickLaunch">Quick launch</sys:String>
+    <sys:String x:Key="Util_Cmd">Command Prompt</sys:String>
+    <sys:String x:Key="Util_PowerShell">PowerShell</sys:String>
+    <sys:String x:Key="Util_Explorer">Windows Explorer</sys:String>
+    <sys:String x:Key="Launch_Elevated">Mazure Tools is running as administrator, so tools opened here are also elevated.</sys:String>
+    <sys:String x:Key="Launch_Standard">Tools open with standard (non-administrator) rights.</sys:String>
+    <sys:String x:Key="Launch_Failed">{0} could not be started: {1}</sys:String>
+
+    <sys:String x:Key="Port_Title">Port checker</sys:String>
+    <sys:String x:Key="Port_Port">TCP port</sys:String>
+    <sys:String x:Key="Port_Check">Check port</sys:String>
+    <sys:String x:Key="Port_Note">Makes one TCP connection attempt (5 second timeout). Only test hosts you own or are allowed to test.</sys:String>
+    <sys:String x:Key="Port_Connecting">Connecting…</sys:String>
+    <sys:String x:Key="Port_Invalid">The port must be a number between 1 and 65535.</sys:String>
+    <sys:String x:Key="Port_HostInvalid">Enter a valid host name or IP address.</sys:String>
+    <sys:String x:Key="Port_Open">Port {0} is OPEN on {1}{2} — connected in {3} ms.</sys:String>
+    <sys:String x:Key="Port_Closed">Port {0} is CLOSED on {1} — the host answered but nothing is listening.</sys:String>
+    <sys:String x:Key="Port_TimedOut">No answer from {0}:{1} within {2} s. The port may be filtered by a firewall, or the host is offline.</sys:String>
+    <sys:String x:Key="Port_NotFound">The host '{0}' could not be found. Check the spelling and your DNS settings.</sys:String>
+
+    <sys:String x:Key="Hash_Title">Hash calculator</sys:String>
+    <sys:String x:Key="Hash_File">File</sys:String>
+    <sys:String x:Key="Hash_HashFile">Hash file</sys:String>
+    <sys:String x:Key="Hash_Text">Or text (hashed as UTF-8)</sys:String>
+    <sys:String x:Key="Hash_HashText">Hash text</sys:String>
+    <sys:String x:Key="Hash_ResultFor">Result for {0}</sys:String>
+    <sys:String x:Key="Hash_Compare">Compare with expected hash</sys:String>
+    <sys:String x:Key="Hash_Match">✔ Match ({0})</sys:String>
+    <sys:String x:Key="Hash_NoMatch">✘ Does not match any calculated hash</sys:String>
+    <sys:String x:Key="Hash_Warn">MD5 and SHA-1 are no longer collision resistant. Use SHA-256 when verifying downloads.</sys:String>
+    <sys:String x:Key="Hash_ChooseFile">Choose a file first.</sys:String>
+    <sys:String x:Key="Hash_TypeText">Type some text first.</sys:String>
+    <sys:String x:Key="Hash_SourceText">text input (UTF-8)</sys:String>
+    <sys:String x:Key="Hash_PickTitle">Choose a file to hash</sys:String>
+    <sys:String x:Key="Hash_Dialog">Hash</sys:String>
+
+    <!-- ============================================================ settings -->
+    <sys:String x:Key="Set_General">General</sys:String>
+    <sys:String x:Key="Set_Language">Language</sys:String>
+    <sys:String x:Key="Set_LanguageNote">Applies immediately. Numbers and units follow the chosen language.</sys:String>
+    <sys:String x:Key="Set_DarkTheme">Dark theme</sys:String>
+    <sys:String x:Key="Set_CloseToTray">Keep running in the system tray when the window is closed</sys:String>
+    <sys:String x:Key="Set_Startup">Start Mazure Tools when I sign in to Windows (minimised to the tray)</sys:String>
+    <sys:String x:Key="Set_StartupNote">Adds or removes a per-user startup entry (HKCU\...\Run). No administrator rights needed.</sys:String>
+    <sys:String x:Key="Set_Permissions">Permissions</sys:String>
+    <sys:String x:Key="Set_Admin">Running as administrator.</sys:String>
+    <sys:String x:Key="Set_Standard">Running as a standard user. Admin-only actions will ask before restarting elevated.</sys:String>
+    <sys:String x:Key="Set_NoSilent">Mazure Tools never elevates silently. Windows always shows its own permission prompt first.</sys:String>
+    <sys:String x:Key="Set_RestartReason">Some tools (renew IP, ending or restarting processes that run as administrator) need administrator rights.</sys:String>
+    <sys:String x:Key="Set_Data">Data</sys:String>
+    <sys:String x:Key="Set_DataFolder">Settings are stored in {0}</sys:String>
+    <sys:String x:Key="Set_Internet">Mazure Tools contacts the internet only when you press 'Look up' for the public IP.</sys:String>
+    <sys:String x:Key="Set_About">About</sys:String>
+    <sys:String x:Key="Set_AboutText">Mazure Tools brings Windows system and network utilities together in one small, fast app. Open source, no telemetry. Made by Claxe.</sys:String>
+
+    <!-- ============================================================ Mazu, the mascot -->
+    <sys:String x:Key="Mascot_Hello">Hi! I'm Mazu. I'll keep an eye on your PC.</sys:String>
+    <sys:String x:Key="Mascot_Happy1">All good here!</sys:String>
+    <sys:String x:Key="Mascot_Happy2">Nice and calm. I like it.</sys:String>
+    <sys:String x:Key="Mascot_Tired1">Phew… the CPU has been busy for a while.</sys:String>
+    <sys:String x:Key="Mascot_Tired2">Maybe check the Processes page?</sys:String>
+    <sys:String x:Key="Mascot_WorriedRam">Memory is {0}% full!</sys:String>
+    <sys:String x:Key="Mascot_WorriedDisk">{0} is almost full ({1}% free)!</sys:String>
+    <sys:String x:Key="Mascot_Sleepy1">Zzz… wake me when you're back.</sys:String>
+    <sys:String x:Key="Mascot_Sleepy2">Zzz…</sys:String>
+    <sys:String x:Key="Mascot_Wake">Welcome back!</sys:String>
+    <sys:String x:Key="Mascot_Offline1">The network is gone?!</sys:String>
+    <sys:String x:Key="Mascot_Offline2">No connection… should we look at the Network page?</sys:String>
+    <sys:String x:Key="Mascot_Online">Phew, the network is back!</sys:String>
+    <sys:String x:Key="Mascot_Relief">That's better.</sys:String>
+    <sys:String x:Key="Mascot_MenuHide">Hide Mazu</sys:String>
+    <sys:String x:Key="Set_ShowMascot">Show Mazu, the mascot, on the desktop (bottom right, always on top)</sys:String>
+    <sys:String x:Key="Set_ShowMascotNote">Mazu reacts to CPU, memory, disk, network and idle time, and keeps sampling CPU and memory once a second while shown, even when the window is in the tray. Turn it off for zero background activity. Drag it anywhere, click it to chat, right-click to hide.</sys:String>
+
+    <!-- more lines so Mazu does not repeat itself -->
+    <sys:String x:Key="Mascot_Hello2">Mazu reporting for duty! Snacks: free RAM.</sys:String>
+    <sys:String x:Key="Mascot_Hello3">Hello! I'm Mazu, and yes, I'm a slime. No, I can't talk about it.</sys:String>
+    <sys:String x:Key="Mascot_Happy3">I'm a slime, not a screensaver. But I can do both.</sys:String>
+    <sys:String x:Key="Mascot_Happy4">Fun fact: zero bytes were harmed today.</sys:String>
+    <sys:String x:Key="Mascot_Happy5">Poke me again, I dare you.</sys:String>
+    <sys:String x:Key="Mascot_Happy6">Have you tried turning yourself off and on again? Kidding. Stay!</sys:String>
+    <sys:String x:Key="Mascot_Ticklish">Okay okay, that tickles!</sys:String>
+    <sys:String x:Key="Mascot_Tired3">Something is working overtime here. Union rules, you know.</sys:String>
+    <sys:String x:Key="Mascot_Tired4">My fans… wait, I don't have fans. I still feel it!</sys:String>
+    <sys:String x:Key="Mascot_Tired5">Is it a game, a browser with 47 tabs, or both?</sys:String>
+    <sys:String x:Key="Mascot_WorriedRam2">Memory is {0}% full. Maybe close a few of those tabs?</sys:String>
+    <sys:String x:Key="Mascot_WorriedRam3">{0}% memory… I'm getting squished!</sys:String>
+    <sys:String x:Key="Mascot_WorriedDisk2">{0} has only {1}% left. Time to delete that 2019 installer folder?</sys:String>
+    <sys:String x:Key="Mascot_WorriedDisk3">{0} is nearly full ({1}% free). I can't eat any more files!</sys:String>
+    <sys:String x:Key="Mascot_Sleepy3">Zzz… five more minutes…</sys:String>
+    <sys:String x:Key="Mascot_Sleepy4">Zzz… dreaming of free RAM…</sys:String>
+    <sys:String x:Key="Mascot_Sleepy5">Zzz… I'm not sleeping, I'm just resting my eyes.</sys:String>
+    <sys:String x:Key="Mascot_Wake2">You're back! I only blinked, I swear.</sys:String>
+    <sys:String x:Key="Mascot_Wake3">Oh! I was totally awake.</sys:String>
+    <sys:String x:Key="Mascot_Offline3">Did somebody trip over the router again?</sys:String>
+    <sys:String x:Key="Mascot_Offline4">The internet left without saying goodbye.</sys:String>
+    <sys:String x:Key="Mascot_Online2">And we're back online. I never doubted it.</sys:String>
+    <sys:String x:Key="Mascot_Relief2">Ahh, breathing room.</sys:String>
+    <sys:String x:Key="Mascot_Relief3">Crisis over. I was very calm. Very.</sys:String>
+
+</ResourceDictionary>

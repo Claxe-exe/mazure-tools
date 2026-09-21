@@ -1,0 +1,36 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Mazure Tools version
+      description: Shown in Settings, e.g. 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2 (build 26100)
+    validations:
+      required: true
+  - type: dropdown
+    id: elevation
+    attributes:
+      label: Running as
+      options: [Standard user, Administrator]
+  - type: textarea
+    id: log
+    attributes:
+      label: Error log
+      description: Contents of %AppData%\MazureTools\error.log, if it exists. Remove anything private.
+      render: text

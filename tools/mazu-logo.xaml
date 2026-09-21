@@ -1,0 +1,32 @@
+<!-- Mazu, happy. Same drawing as the HAPPY layer in Views/MascotWindow.xaml; rendered to PNG/ICO by New-Icon.ps1. -->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="130" Height="120">
+    <Ellipse Canvas.Left="20" Canvas.Top="106" Width="90" Height="10" Fill="#0C4A6E" Opacity="0.22" />
+    <Path Data="M14,102 C6,72 26,40 52,32 C58,30 62,20 66,12 C70,20 74,30 80,32 C106,40 124,72 116,102 C113,110 17,110 14,102 Z"
+          Stroke="#0284C7" StrokeThickness="1.6" StrokeLineJoin="Round">
+        <Path.Fill>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Color="#7DD3FC" Offset="0" />
+                <GradientStop Color="#38BDF8" Offset="0.55" />
+                <GradientStop Color="#0EA5E9" Offset="1" />
+            </LinearGradientBrush>
+        </Path.Fill>
+    </Path>
+    <Ellipse Canvas.Left="30" Canvas.Top="46" Width="26" Height="13" Fill="White" Opacity="0.55">
+        <Ellipse.RenderTransform>
+            <RotateTransform Angle="-28" CenterX="13" CenterY="6" />
+        </Ellipse.RenderTransform>
+    </Ellipse>
+    <Ellipse Canvas.Left="24" Canvas.Top="62" Width="6" Height="6" Fill="White" Opacity="0.5" />
+    <Ellipse Canvas.Left="38" Canvas.Top="55" Width="18" Height="22" Fill="White" />
+    <Ellipse Canvas.Left="74" Canvas.Top="55" Width="18" Height="22" Fill="White" />
+    <Ellipse Canvas.Left="41" Canvas.Top="60" Width="12" Height="15" Fill="#0C4A6E" />
+    <Ellipse Canvas.Left="77" Canvas.Top="60" Width="12" Height="15" Fill="#0C4A6E" />
+    <Ellipse Canvas.Left="44" Canvas.Top="62" Width="5" Height="5" Fill="White" />
+    <Ellipse Canvas.Left="80" Canvas.Top="62" Width="5" Height="5" Fill="White" />
+    <Ellipse Canvas.Left="27" Canvas.Top="80" Width="14" Height="8" Fill="#FDA4AF" Opacity="0.7" />
+    <Ellipse Canvas.Left="89" Canvas.Top="80" Width="14" Height="8" Fill="#FDA4AF" Opacity="0.7" />
+    <Path Data="M55,83 Q65,101 75,83 Z" Fill="#0C4A6E" Stroke="#0C4A6E" StrokeThickness="1.5" StrokeLineJoin="Round" />
+    <Ellipse Canvas.Left="59" Canvas.Top="90" Width="12" Height="6" Fill="#FB7185" />
+</Canvas>
